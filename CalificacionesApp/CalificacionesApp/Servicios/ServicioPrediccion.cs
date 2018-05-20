@@ -1,6 +1,4 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -21,9 +19,6 @@ namespace CalificacionesApp.Servicios
                     cliente.DefaultRequestHeaders.Authorization = new 
                         AuthenticationHeaderValue("Bearer", Constantes.PrediccionKey);
                     cliente.BaseAddress = new Uri(Constantes.PrediccionURL);
-
-                    var datos = new DatosAlumno();
-                    //var json = JsonConvert.SerializeObject(datos);
 
                     var content = new StringContent(json);
                     content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
@@ -48,7 +43,5 @@ namespace CalificacionesApp.Servicios
                 return null;
             }
         }
-
-
     }
 }
