@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalificacionesApp.Paginas.PaginaPrediccion">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="¿Graduado?" TextColor="Blue"/>
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="txtGraduadoC" Text="Yes" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Curso A" TextColor="Blue"/>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtCursoA" Text="MATH 097" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Calificación" TextColor="Blue"/>
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtCalifA" Text="C-" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="3" Grid.Column="0" Text="PassFail A" TextColor="Blue"/>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="txtPassFailA" Text="At Risk" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="4" Grid.Column="0" Text="Semestre A" TextColor="Blue"/>
+                <Entry Grid.Row="4" Grid.Column="1" x:Name="txtSemestreA" Text="Spring" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="5" Grid.Column="0" Text="Años desde Bachillerato" TextColor="Blue"/>
+                <Entry Grid.Row="5" Grid.Column="1" x:Name="txtAñosA" Text="1" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="6" Grid.Column="0" Text="Curso B" TextColor="Blue"/>
+                <Entry Grid.Row="6" Grid.Column="1" x:Name="txtCursoB" Text="MATH 098" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="7" Grid.Column="0" Text="GPA" TextColor="Blue"/>
+                <Entry Grid.Row="7" Grid.Column="1" x:Name="txtGPA" Text="1.828" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="8" Grid.Column="0" Text="Semestre B" TextColor="Blue"/>
+                <Entry Grid.Row="8" Grid.Column="1" x:Name="txtSemestreB" Text="Spring" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="9" Grid.Column="0" Text="Diferencia GPA" TextColor="Blue"/>
+                <Entry Grid.Row="9" Grid.Column="1" x:Name="txtDiferencia" Text="-0.032606061" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="10" Grid.Column="0" Text="¿Graduado Bachillerato?" TextColor="Blue"/>
+                <Entry Grid.Row="10" Grid.Column="1" x:Name="txtGraduadoB" Text="Yes" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="11" Grid.Column="0" Text="Log Time" TextColor="Blue"/>
+                <Entry Grid.Row="11" Grid.Column="1" x:Name="txtLogTime" Text="1" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="12" Grid.Column="0" Text="¿Habla Inglés?" TextColor="Blue"/>
+                <Entry Grid.Row="12" Grid.Column="1" x:Name="txtIngles" Text="Yes" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="13" Grid.Column="0" Text="Mismo Instructor" TextColor="Blue"/>
+                <Entry Grid.Row="13" Grid.Column="1" x:Name="txtInstructor" Text="Different Instructor" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="14" Grid.Column="0" Text="Transición" TextColor="Blue"/>
+                <Entry Grid.Row="14" Grid.Column="1" x:Name="txtTransicion" Text="MATH 097 TO MATH 098" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="15" Grid.Column="0" Text="Instructor A" TextColor="Blue"/>
+                <Entry Grid.Row="15" Grid.Column="1" x:Name="txtInstructorA" Text="Anthony Minghella" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="16" Grid.Column="0" Text="Instructor B" TextColor="Blue"/>
+                <Entry Grid.Row="16" Grid.Column="1" x:Name="txtInstructorB" Text="Joel Schumacher" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="17" Grid.Column="0" Text="ID Estudiante" TextColor="Blue"/>
+                <Entry Grid.Row="17" Grid.Column="1" x:Name="txtID" Text="629536327" TextColor="White" BackgroundColor="Black"/>
+
+                <Label Grid.Row="18" Grid.Column="0" Text="Nombre Estudiante" TextColor="Blue"/>
+                <Entry Grid.Row="18" Grid.Column="1" x:Name="txtNombre" Text="Joel David Moore" TextColor="White" BackgroundColor="Black"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnPredecir" Text="Predecir" Order="Primary" Priority="0" Clicked="btnPredecir_Clicked"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

@@ -13,7 +13,7 @@ namespace CalificacionesApp
 		{
 			InitializeComponent();
 
-			MainPage = new CalificacionesApp.MainPage();
+			MainPage = new NavigationPage(new CalificacionesApp.Paginas.PaginaPrediccion());
 		}
 
 		protected override void OnStart ()
